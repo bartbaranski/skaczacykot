@@ -9,7 +9,7 @@ final class Assets {
 
     static BufferedImage img(String name) {
         try {
-            // dopasowane do /resources/images/<plik> w JAR
+            
             String full = "/resources/images/" + name;
             URL url = Assets.class.getResource(full);
             if (url == null) {
